@@ -18,7 +18,7 @@
             <img src="res/pizza-stock.jpeg" alt="Man Standing Outside Trattoria Pizzeria Store">
             <!--spurce: Artūras Kokorevas -->
             <div class="hero-text">
-                <h1>Jamme Jà</h1>
+                <h1>JAMME JA</h1>
             </div>
         </div>
         <div class="form-container">
@@ -30,7 +30,33 @@
                 <p>You <em>know</em> you want it.</p>
             </div>
             <div class="form-div">
-                <p class="do-it">Do it <strong>now.</strong></p>
+                <p class="do-it">Do it <em>now</em>.</p>
+                <form action="_blank" method="post">
+                    <div>
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    <div>
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="text" name="phone" id="phone">
+                    </div>
+                    <div>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" maxlength="16" required>
+                    </div>
+                    <div>
+                        <label for="conf-password">CONFIRM PASSWORD</label>
+                        <input type="password" id="conf-password" required>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
