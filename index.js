@@ -31,10 +31,12 @@ function isValidConfirm() {
     if(!(pwdInput.value == pwdConfirm.value)) {
         this.classList.add('invalid');
         this.after(invalidConfirm);
+        this.setCustomValidity("Doesn't match password.")
     }
     else {
         this.classList.remove('invalid');
         this.classList.add('valid');
         invalidConfirm.remove();
+        this.setCustomValidity("");
     }
 }
